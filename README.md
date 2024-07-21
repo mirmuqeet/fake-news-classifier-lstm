@@ -1,52 +1,61 @@
-**# Fake News Classifier Using LSTM**
+# Fake News Classifier Using LSTM
 
-This repository contains an implementation of a fake news classifier using an LSTM neural network. 
+This project involves building a Fake News Classifier using LSTM (Long Short-Term Memory) networks. The classifier is trained on a dataset of news articles to predict whether a news article is fake or real.
 
-**## Dataset**
+## Dataset
 
-The model is trained on the dataset from the [Kaggle Fake News Challenge](https://www.kaggle.com/c/fake-news/data#) and can predict whether a given news article is real or fake.
+The dataset used for this project is sourced from the [Kaggle Fake News Competition](https://www.kaggle.com/c/fake-news/data). It contains news articles labeled as real or fake.
 
+## Project Structure
 
+- `Fake_News_Classifier_LSTM.ipynb`: Jupyter notebook containing the implementation of the LSTM model.
+- `Bidirectional LSTM RNN.ipynb`: Python script implementing the Bidirectional LSTM model.
+- `train.csv`: The dataset used for training the models.
+- `README.md`: Project documentation.
 
-**## Installation**
+## Requirements
 
-To run the project, you need to have Python installed along with the required libraries.
+- Python 3.x
+- pandas
+- numpy
+- tensorflow
+- sklearn
+- nltk
 
+## Installation
 
-**Natural Language Processing (NLP) Steps**
-
-Text Cleaning and Tokenization:
-
-Remove non-alphabetic characters to retain only letters.
-Convert text to lowercase to ensure uniformity.
-Split text into words (tokens).
-
-**Removing Stop Words:**
-
-Use NLTK's stopwords list to remove common English words that do not contribute to the meaning (e.g., 'the', 'is', 'in').
-
-**Stemming:**
-
-
-Apply Porter Stemming to reduce words to their base or root form (e.g., 'running' to 'run').
-
-**One-Hot Encoding:**
-
-Convert each word to a unique integer using the one_hot method.
-
-**Padding Sequences:**
-
-Ensure all sequences (titles) have the same length by padding shorter sequences with zeros.
+Install the required libraries using pip:
 
 
-**Model Architecture**
+**Usage**
 
-The model architecture includes an embedding layer, an LSTM layer, and dropout layers for regularization.
+**LSTM Model**
+
+To train and evaluate the LSTM model, run the Jupyter notebook Fake_News_Classifier_LSTM.ipynb.
+
+**Bidirectional LSTM Model**
+
+To train and evaluate the Bidirectional LSTM model, run the Python script Bidirectional LSTM RNN.ipynb
+
+**NLP Preprocessing**
+
+The preprocessing involves:
+
+Removing non-alphabetical characters
+Converting text to lowercase
+Removing stopwords
+Stemming words using the Porter Stemmer
+
+**Performance Metrics**
+
+The performance of the models is evaluated using:
+
+**Confusion Matrix**
+
+Accuracy Score
+Classification Report (Precision, Recall, F1-Score)
 
 **Results**
 
-Accuracy: 90%
-Precision: 0.89 for fake news, 0.91 for real news
-Recall: 0.89 for fake news, 0.92 for real news
-F1-Score: 0.89 for fake news, 0.92 for real news
+The LSTM model achieved an accuracy of 90% on the test set. The Bidirectional LSTM model's performance can be evaluated similarly.
 
