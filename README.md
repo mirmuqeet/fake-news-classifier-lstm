@@ -11,8 +11,9 @@ The model is trained on the dataset from the [Kaggle Fake News Challenge](https:
 **## Installation**
 
 To run the project, you need to have Python installed along with the required libraries.
-**
-Natural Language Processing (NLP) Steps**
+
+
+**Natural Language Processing (NLP) Steps**
 
 Text Cleaning and Tokenization:
 
